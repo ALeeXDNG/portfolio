@@ -1,7 +1,8 @@
 
 
 .mainContainer{
-    background-color: rgba(6, 9, 24, 0.9); 
+    background-color:  rgb(10, 33, 40);
+
      width: 100vw;
     height: 100vh;
     
@@ -17,14 +18,32 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
+.animation_layer.parallax.sky{
+  transform: translateY(1%) scale(1.1);
+  
+}
+.animation_layer.parallax.mountain{
+  transform: scale(1.1);
+  
+}
+.animation_layer.parallax.snow{
+  transform: translateY(-25%) ;
+  
+}
 #mountain1   {
   background-image: url(./img/mountain1.png);
 }
 #mountain2   {
     background-image: url(./img/mountain2.png);
   }
-  #mountain3   {
-    background-image: url(./img/mountain3.jpg);
+
+  #snow   {
+    background-image: url(./img/mist-1932.png);
   }
+  h1 span{
+    color: black; /* Set the color of the text */
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    font-family: 'Open Sans' ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  

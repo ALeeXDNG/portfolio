@@ -25,15 +25,20 @@ function App(props) {
     <div>
       <div className="mainContainer">
         <Parallax pages={4} pointerEvents={true}>
+      
+          <ParallaxLayer offset={0} speed={0.8}>
+            <div className="animation_layer parallax mountain" id="mountain1"></div>
+          </ParallaxLayer>
+         
           <ParallaxLayer offset={0} speed={0.6}>
-            <div className="animation_layer parallax" id="mountain1"></div>
+            <div className="animation_layer parallax sky" id="mountain2"></div>
           </ParallaxLayer>
-          <ParallaxLayer offset={0} speed={0.4}>
-            <div className="animation_layer parallax" id="mountain2"></div>
+          <ParallaxLayer offset={0} speed={0.01}>
+          <ParallaxLayer offset={0} speed={3}>
+            <div className="animation_layer parallax snow" id="snow"></div>
           </ParallaxLayer>
-          <ParallaxLayer offset={0} speed={0.1}>
             <div style={Heading}>
-              <h1> Welcome to my world</h1>
+              <h1>  <span  >Welcome  </span> &nbsp;to my world</h1>
             </div>
           </ParallaxLayer>
         </Parallax>

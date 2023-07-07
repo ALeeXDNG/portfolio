@@ -1,3 +1,4 @@
+
 .navBar {
   position:relative;
   display: flex;
@@ -43,6 +44,7 @@ img {
 }
 
 h1 {
+  margin: 20rem;
   text-transform: uppercase;
   color: #FFF;
   text-align: center;
@@ -52,7 +54,7 @@ h1 {
   letter-spacing: 9.6px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   height: 100vh;
 }
 
