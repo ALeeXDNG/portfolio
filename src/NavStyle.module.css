@@ -1,82 +1,85 @@
 .navBar {
-    display: flex;
-    align-items: center;
-  }
+  position:relative;
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(50, 123, 123); */
   
-  img {
-    margin-right: auto;
-    margin-left: 2%;
-    width: 17vw;
-    height: 17vh;
-  }
-  
-  .navigationMenu {
-    color: rgba(255, 255, 255, 0.608);
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px 10px;
-    margin-right: 5%;
-    margin-left: auto;
-  }
-  
-  .navigationMenu p {
-    text-transform: uppercase;
-    margin: 5%;
-    letter-spacing: 4px;
-   padding: 7px;
-   padding-left: 13px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  
-  .navigationMenu p:hover {
-    color: rgba(8, 11, 25, 1);
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 15px;
-  }
-  
-  .menuIcon {
+}
+
+img {
+  margin-right: auto;
+  margin-left: 2%;
+  width: 17vw;
+  height: 17vh;
+}
+
+.navigationMenu {
+  color: rgba(255, 255, 255, 0.608);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.navigationMenu p {
+  text-transform: uppercase;
+  margin: 5%;
+  letter-spacing: 4px;
+ padding: 7px;
+ padding-left: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.navigationMenu p:hover {
+  color: rgba(8, 11, 25, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 9.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  .mainNav {
     display: none;
   }
   
-  h1 {
-    text-transform: uppercase;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    max-width: 200px;
+    scale: 2;
+  }
+  
+  .navigationMenu {
+    display: none;
+  }
+  
+  .menuIcon {
+    display: block;
     color: #FFF;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 9.6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-left: 2rem;
   }
-  
-  /* Media Queries */
-  
-  @media screen and (max-width: 480px) {
-    .mainNav {
-      display: none;
-    }
-    
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 70%;
-      height: auto;
-      max-width: 200px;
-      scale: 2;
-    }
-    
-    .navigationMenu {
-      display: none;
-    }
-    
-    .menuIcon {
-      display: block;
-      color: #FFF;
-      margin-left: 2rem;
-    }
-  }
-  
+}

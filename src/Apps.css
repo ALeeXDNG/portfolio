@@ -1,0 +1,30 @@
+
+
+.mainContainer{
+    background-color: rgba(6, 9, 24, 0.9); 
+     width: 100vw;
+    height: 100vh;
+    
+}
+.animation_layer.parallax {
+  position: fixed;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#mountain1   {
+  background-image: url(./img/mountain1.png);
+}
+#mountain2   {
+    background-image: url(./img/mountain2.png);
+  }
+  #mountain3   {
+    background-image: url(./img/mountain3.jpg);
+  }
