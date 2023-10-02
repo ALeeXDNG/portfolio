@@ -6,13 +6,20 @@ function SideBar(props)
   const { style } = props;
 
   const sidebarContainer = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 998,
+    backdropFilter: style.display === 'none' ? 'blur(0)' : 'blur(5px)',
     transform: style.display === 'none' ? 'translateX(-100%)' : 'translateX(0)',
-    transition: 'transform 0.5s ease-in-out',
-
+    transition: 'transform 0.8s ease-in',
+ 
   };
 
   const textContainer = {
-    marginTop:'5rem' ,
+    marginTop:'13rem' ,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

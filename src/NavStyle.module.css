@@ -71,7 +71,7 @@ h1 {
     margin: 0 auto;
     width: 70%;
     height: auto;
-    max-width: 200px;
+    max-width: 100px;
     scale: 2;
   }
   
@@ -80,8 +80,30 @@ h1 {
   }
   
   .menuIcon {
+
     display: block;
     color: #FFF;
     margin-left: 2rem;
+    position: fixed;
+    z-index: 999;
   }
+  h1 {
+    letter-spacing: 5px; /* Adjust the letter spacing value as needed */
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem auto;
+    justify-content: flex-start;
+
+    max-width: 300px;
+  }
+   /* h1 ::after {
+    content: "";
+    display: block;
+    margin: 10px; 
+    border-top: 1px solid black;
+  }  */
+
 }
